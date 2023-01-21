@@ -34,3 +34,33 @@ key : value 를 뜻하며 key와 대응하는 value가 존재한다.
 ### struct vs class
 구조체와 클래스의 차이점
 
+struct Person {
+	var name : String
+	var age : Int
+}
+// class 는 초기값인 init 를 설정해주어야함
+class Car {
+	var name : String
+	var color : String
+	
+	init(name:String,color:Int){
+		self.name = name
+		self.color = color
+	}
+}
+
+let sueun  = Person(name:"sueun",age:20)
+
+print(sueun.name)
+print(sueun.age)
+
+
+let sonata = Car(name:"SuuenCar",color:"black")
+
+print(sonata.name)
+print(sonata.color)
+구초체를 선언하여 사용하게 되면
+구조체로 찍어내사용한 사람이 그 값만 수정가능하다
+
+클래스는 구조체와는 다르게 자신의 것을 다른사람이 수정할 수 있다.
+person -> sonata -> nil 이렇게 연결되어있다.
