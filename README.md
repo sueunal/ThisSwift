@@ -7,7 +7,7 @@
 ### Array vs Dictionary 
 배열과 딕셔너리의 차이점
 
-###배열 선언
+### 배열 선언
 ```
 let arraylist = [Int]()
 or
@@ -15,7 +15,7 @@ let arraylist1 : [String] = ["Apple","Banana","strawberry"]
 ```
 로 선언 가능 let으로 선언하였기 때문에 타입 변경 및 값 변경 불가능
 
-###딕셔너리 선언
+### 딕셔너리 선언
 ```
 let dictionary0 : [String:String] = ["Apple":"apple","Banana":"banana"]
 ```
@@ -24,7 +24,7 @@ let dictionary0 : [String:String] = ["Apple":"apple","Banana":"banana"]
 key : value 를 뜻하며 key와 대응하는 value가 존재한다.
 
 
-###차이점
+### 차이점
 배열은 순서가 존재한다.
 0 1 2 3 4 .. n 으로 0부터 시작한다.
 
@@ -54,9 +54,12 @@ class Car {
 	}
 }
 let sueun  = Person(name:"sueun",age:20)
+
 print(sueun.name)
 print(sueun.age)
+
 let sonata = Car(name:"SuuenCar",color:"black")
+
 print(sonata.name)
 print(sonata.color)
 ```
