@@ -8,13 +8,17 @@
 배열과 딕셔너리의 차이점
 
 ###배열 선언
+```
 let arraylist = [Int]()
 or
 let arraylist1 : [String] = ["Apple","Banana","strawberry"]
+```
 로 선언 가능 let으로 선언하였기 때문에 타입 변경 및 값 변경 불가능
 
 ###딕셔너리 선언
+```
 let dictionary0 : [String:String] = ["Apple":"apple","Banana":"banana"]
+```
 로 선언 가능
 배열과는 다르게 [String:String]으로 타입이 지정되어있는데
 key : value 를 뜻하며 key와 대응하는 value가 존재한다.
@@ -33,32 +37,30 @@ key : value 를 뜻하며 key와 대응하는 value가 존재한다.
 
 ### struct vs class
 구조체와 클래스의 차이점
-
+```
 struct Person {
 	var name : String
 	var age : Int
 }
 // class 는 초기값인 init 를 설정해주어야함
+
 class Car {
 	var name : String
 	var color : String
-	
+
 	init(name:String,color:Int){
 		self.name = name
 		self.color = color
 	}
 }
-
 let sueun  = Person(name:"sueun",age:20)
-
 print(sueun.name)
 print(sueun.age)
-
-
 let sonata = Car(name:"SuuenCar",color:"black")
-
 print(sonata.name)
 print(sonata.color)
+```
+
 구초체를 선언하여 사용하게 되면
 구조체로 찍어내사용한 사람이 그 값만 수정가능하다
 
