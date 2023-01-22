@@ -42,7 +42,7 @@ struct Person {
 	var name : String
 	var age : Int
 }
-// class 는 초기값인 init 를 설정해주어야함
+
 
 class Car {
 	var name : String
@@ -52,6 +52,7 @@ class Car {
 		self.name = name
 		self.color = color
 	}
+-> class는 초기값인 init 를 설정해주어야함
 }
 let sueun  = Person(name:"sueun",age:20)
 
@@ -79,4 +80,19 @@ person -> sonata -> nil 이렇게 연결되어있다.
 구조체는 틀이다. 똑같이 구조체라는 틀을 만들고 그 안에 코드를 넣어서 객체를 만들어 낸다.
 
 이부분을 잘 고려해서 코딩하는 것이 중요하다!
+```
+
+
+## Day3 
+### Tuple?
+
+튜플을 언제 쓰면 좋을까?
+
+let sueun = ("Sueun", 24, true)
+배열과 비슷하지만 String, Int, Boolean 값이 한 튜플에 담겨있다.
+```
+print(sueun)
+-> ("Sueun", 24, true)
+print(sueun.1)
+-> 24
 ```
