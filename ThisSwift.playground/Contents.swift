@@ -28,5 +28,8 @@ print("\n")
 for item in dictionary0{
 	print(item.value)
 }
+
 let sueun = ("sueun", 24, true)
-print(sueun.1)
+var n : [Int]
+var i : Int = 0
+
