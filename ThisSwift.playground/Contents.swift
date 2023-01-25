@@ -33,3 +33,23 @@ let sueun = ("sueun", 24, true)
 var n : [Int]
 var i : Int = 0
 
+struct Student: Codable{
+    var name: String
+    var age:  Int
+}
+
+let studentData = """
+{
+    "name" : "Sueun",
+    "age": 20
+}
+""".data(using: .utf8)!
+let student1 = try! JSONDecoder().decode(Student.self, from: studentData)
+
+print(student1)
+print(student1.name)
+print(student1.age)
+
+
+
+

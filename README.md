@@ -102,3 +102,31 @@ dictionary 처럼 name:"Sueun, age:24, hasCar : true 처럼 라벨링을 설정�
 구초체를 만들때 딱 한번만 사용될 경우에 튜플로 생성
 여러번 인스턴스를 만들어야 할 때,
 변수 여러개를 넘겨야 할 경우 튜플로 생성해서 넘길 수 있다.
+
+
+## Day4
+### Codable?
+코더블이 무엇인가?
+incodable, decodable 둘다 채용한 프로토콜이다.
+```
+struct Student: Codable{
+    var name: String
+    var age:  Int
+}
+
+let studentData = """
+{
+    "name" : "Sueun",
+    "age": 20
+}
+""".data(using: .utf8)!
+let student1 = try! JSONDecoder().decode(Student.self, from: studentData)
+
+print(student1)
+print(student1.name)
+print(student1.age)
+```
+코딩을 하다가 JSON data, decoding data 등을 받아야할 경우
+#### 정의
+```typealias Codable = Decodable & Encodable```
+인코딩 혹은 디코딩을 해주어야하는 상황이 발생한다.
