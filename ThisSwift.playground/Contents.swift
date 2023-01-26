@@ -35,14 +35,17 @@ var i : Int = 0
 
 var sampleArray: [Int] = [1,1,2,2,3,3]
 var sampleSet: Set<Int> = Set ([1,1,2,2,3,3])
+
 print (sampleArray)
 print (sampleSet)
+
 var randomNumbers: [Int] = []
+
 while randomNumbers.count < 1000 {
 let number = Int.random(in: 1...10000000)
 if !randomNumbers.contains (number) {
 randomNumbers.append (number)
-}
+          }
 }
 sampleSet = Set (randomNumbers)
 let startTime = CFAbsoluteTimeGetCurrent ( )
@@ -66,8 +69,6 @@ let student1 = try! JSONDecoder().decode(Student.self, from: studentData)
 print(student1)
 print(student1.name)
 print(student1.age)
-
-
 
 let smapleArray: [Int] = [1,1,2,2,3,3]
 let smapleSet : Set<Int> = Set([1,1,2,2,3,3])
