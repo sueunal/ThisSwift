@@ -33,6 +33,7 @@ let sueun = ("sueun", 24, true)
 var n : [Int]
 var i : Int = 0
 
+<<<<<<< HEAD
 var sampleArray: [Int] = [1,1,2,2,3,3]
 var sampleSet: Set<Int> = Set ([1,1,2,2,3,3])
 print (sampleArray)
@@ -49,3 +50,25 @@ let startTime = CFAbsoluteTimeGetCurrent ( )
 print (sampleSet.contains (84838))
 let processTime = CFAbsoluteTimeGetCurrent () - startTime
 print ("set process time: \(processTime)")
+=======
+struct Student: Codable{
+    var name: String
+    var age:  Int
+}
+
+let studentData = """
+{
+    "name" : "Sueun",
+    "age": 20
+}
+""".data(using: .utf8)!
+let student1 = try! JSONDecoder().decode(Student.self, from: studentData)
+
+print(student1)
+print(student1.name)
+print(student1.age)
+
+
+
+
+>>>>>>> day4-swift
