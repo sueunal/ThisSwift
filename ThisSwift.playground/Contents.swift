@@ -33,3 +33,19 @@ let sueun = ("sueun", 24, true)
 var n : [Int]
 var i : Int = 0
 
+var sampleArray: [Int] = [1,1,2,2,3,3]
+var sampleSet: Set<Int> = Set ([1,1,2,2,3,3])
+print (sampleArray)
+print (sampleSet)
+var randomNumbers: [Int] = []
+while randomNumbers.count < 100000 {
+let number = Int.random(in: 1...10000000)
+if !randomNumbers.contains (number) {
+randomNumbers.append (number)
+}
+}
+sampleSet = Set (randomNumbers)
+let startTime = CFAbsoluteTimeGetCurrent ( )
+print (sampleSet.contains (84838))
+let processTime = CFAbsoluteTimeGetCurrent () - startTime
+print ("set process time: \(processTime)")
