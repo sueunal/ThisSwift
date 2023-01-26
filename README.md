@@ -134,9 +134,9 @@ print(student1.age)
 
 Encodable + Decodable 이 합쳐진 것
 
-example)
+Example)
 Encodable 모델을 json으로 인코드
 Decodeable json을 내가 원하는 모델로 디코드
 
-즉 Encodable, Decodable을 따로 채택하지 않고
+즉 Encodable, Decodable을 따로 채택하지 않고,
 Codable 하나로 채택해 축약할 수 있다.
