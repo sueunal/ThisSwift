@@ -140,3 +140,22 @@ Decodeable json을 내가 원하는 모델로 디코드
 
 즉 Encodable, Decodable을 따로 채택하지 않고,
 Codable 하나로 채택해 축약할 수 있다.
+
+
+## Day5
+### Array vs Set
+
+#### Array는 배열
+중복값이 존재할 수 있다.
+
+#### Set은 집합
+중복값이 존재할 수 없다.
+
+```
+let smapleArray: [Int] = [1,1,2,2,3,3]
+let smapleArray: Set<Int> = Set([1,1,2,2,3,3])
+
+print(smapleArray)
+print(smapleSet)
+```
+Array보다 Set이 더 조회가 빠르다.
