@@ -33,13 +33,12 @@ let sueun = ("sueun", 24, true)
 var n : [Int]
 var i : Int = 0
 
-<<<<<<< HEAD
 var sampleArray: [Int] = [1,1,2,2,3,3]
 var sampleSet: Set<Int> = Set ([1,1,2,2,3,3])
 print (sampleArray)
 print (sampleSet)
 var randomNumbers: [Int] = []
-while randomNumbers.count < 100000 {
+while randomNumbers.count < 1000 {
 let number = Int.random(in: 1...10000000)
 if !randomNumbers.contains (number) {
 randomNumbers.append (number)
@@ -50,7 +49,7 @@ let startTime = CFAbsoluteTimeGetCurrent ( )
 print (sampleSet.contains (84838))
 let processTime = CFAbsoluteTimeGetCurrent () - startTime
 print ("set process time: \(processTime)")
-=======
+
 struct Student: Codable{
     var name: String
     var age:  Int
@@ -70,5 +69,8 @@ print(student1.age)
 
 
 
+let smapleArray: [Int] = [1,1,2,2,3,3]
+let smapleSet : Set<Int> = Set([1,1,2,2,3,3])
 
->>>>>>> day4-swift
+print(smapleArray)
+print(smapleSet)
