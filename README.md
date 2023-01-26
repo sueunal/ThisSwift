@@ -127,6 +127,16 @@ print(student1.name)
 print(student1.age)
 ```
 코딩을 하다가 JSON data, decoding data 등을 받아야할 경우
+
 #### 정의
+
 ```typealias Codable = Decodable & Encodable```
-인코딩 혹은 디코딩을 해주어야하는 상황이 발생한다.
+
+Encodable + Decodable 이 합쳐진 것
+
+example)
+Encodable 모델을 json으로 인코드
+Decodeable json을 내가 원하는 모델로 디코드
+
+즉 Encodable, Decodable을 따로 채택하지 않고
+Codable 하나로 채택해 축약할 수 있다.
