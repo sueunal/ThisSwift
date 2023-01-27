@@ -14,6 +14,7 @@
 		2C56F694298362C7004EF2BF /* MyFirstAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56F693298362C7004EF2BF /* MyFirstAppTests.swift */; };
 		2C56F69E298362C7004EF2BF /* MyFirstAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56F69D298362C7004EF2BF /* MyFirstAppUITests.swift */; };
 		2C56F6A0298362C7004EF2BF /* MyFirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56F69F298362C7004EF2BF /* MyFirstAppUITestsLaunchTests.swift */; };
+		2C56F6AF2983672D004EF2BF /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56F6AE2983672D004EF2BF /* FirstView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		2C56F699298362C7004EF2BF /* MyFirstAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C56F69D298362C7004EF2BF /* MyFirstAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppUITests.swift; sourceTree = "<group>"; };
 		2C56F69F298362C7004EF2BF /* MyFirstAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2C56F6AE2983672D004EF2BF /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				2C56F682298362C6004EF2BF /* MyFirstAppApp.swift */,
 				2C56F684298362C6004EF2BF /* ContentView.swift */,
+				2C56F6AE2983672D004EF2BF /* FirstView.swift */,
 				2C56F686298362C7004EF2BF /* Assets.xcassets */,
 				2C56F688298362C7004EF2BF /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C56F685298362C6004EF2BF /* ContentView.swift in Sources */,
+				2C56F6AF2983672D004EF2BF /* FirstView.swift in Sources */,
 				2C56F683298362C6004EF2BF /* MyFirstAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
