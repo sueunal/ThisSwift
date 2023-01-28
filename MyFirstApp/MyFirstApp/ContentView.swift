@@ -8,15 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    let name = "Hi Sueun!"
     var body: some View {
-        Button{
-            print("Clicked!!!")
-        } label: {
-            Text("Hello, sueun!")
-                .font(.title)
-                .fontWeight(.black)
-                .foregroundColor(Color.blue)
-                .padding()
+        VStack{
+            Text(name)
+            Text(name)
+            Text(name)
         }
     }
 }
