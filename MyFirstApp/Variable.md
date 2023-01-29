@@ -74,3 +74,60 @@ Text("\(anyNumber == anyNumber2)".description)
 Text("\(anyNumber != anyNumber2)".description)
 ```
 
+## 콜렉션 타입
+콜렉션 타입에는 
+Array Dictionary Set 이 존재한다.
+배열, 사전, 집합으로 해석되며 이에 따른 각각의 특징이 존재한다.
+
+#### Array
+##### 선언 
+`let names : [String]`
+**String 뿐만아니라 Int, Double 과 같은 다른 타입이 올 수 있다.**
+**배열은 한 타입의 데이터가 나열 되는 것으로 표현된다.**
+
+##### 활용 예시
+```
+let names : [String] = [“Sueun”, “Leeo”, “Olivia”]
+
+Text(names[0])
+Text(names[1])
+Text(names[2])
+```
+**프로그래밍에서 순서는 대부분 0부터  처음을 의미하며 배열은 0, 1, 2, 등과 같이 값에 인텍스로 접근을 한다.**
+
+#### Dictionary
+사전이라는 의미로 데이터에 value, key 가 묶음 형태로 존재한다.
+##### 선언
+`let engKrDictionary : [String:String]`
+**딕셔너리는 [String:String] 타입을 가지고 있다.**
+
+##### 활용 예시
+```
+let e ngKrDictionary : [String:String] =  ["Apple":"사과", "Banana":"바나나","Coconut":"코코넛"]
+
+Text(EngKrDictionary["Apple"]!)
+Text(EngKrDictionary["Banana"]!)
+Text(EngKrDictionary["Coconut"]!)
+```
+**딕셔너리는 값에 Key 값으로 접근을 한다 apple , banana 의 값이 Key 값으로 불리며**
+**Key 값에 맞는 데이터(Value)를 가져올 수 있다.**
+
+
+#### Set
+**집합은 중복된 값을 가질 수 없는 것이 특징이며, 교집합과 합집합이 가능하다.**
+
+##### 선언
+```
+let houseAnimals :  Set = [“🐶”,”🐱”,”🐦”,”🐦”]
+let farmAnimals : Set = [“🦅”,”🐓”,”🐑”,”🐶”,”🐱”,”🐶”]
+```
+**Set 이라는 타입을 사용하고 배열처럼 값을 넣어준다.**
+
+##### 활용 예시
+```
+Text (houseAnimals.description)
+Text (houseAnimals.union(farmAnimals).description)
+```
+
+**중복된 값을 제거 해서 나온 것이 1번 예시이고** 
+**2번 예시는 합집합을 한 것이다.**

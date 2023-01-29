@@ -6,12 +6,27 @@
 //
 
 import SwiftUI
-import Foundation
-
 
 struct Variable : View {
+    let names : [String] = ["Sueun", "Leeo", "Olivia"]
+    let EngKrDictionary : [String:String] = ["Apple":"사과", "Banana":"바나나","Coconut":"코코넛"]
+    let houseAnimals :  Set = ["🐶","🐱","🐦","🐦"]
+    let farmAnimals : Set = ["🦅","🐓","🐑","🐶","🐱","🐶"]
+    
     var body : some View {
-        Text("Hello, Sueun!?")
+        VStack{
+            
+            Text(names[0])
+            Text(names[1])
+            Text(names[2])
+            
+            Text(EngKrDictionary["Apple"]!)
+            Text(EngKrDictionary["Banana"]!)
+            Text(EngKrDictionary["Coconut"]!)
+            
+            Text (houseAnimals.description)
+            Text (houseAnimals.union(farmAnimals).description)
+        }
     }
 }
 struct Variable_Previews: PreviewProvider{
