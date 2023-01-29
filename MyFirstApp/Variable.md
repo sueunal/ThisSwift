@@ -60,6 +60,10 @@ Text("\(age / anyNumber)")
 
 #### 비교 연산자
 **두 값을 비교하는 연산을 하며  반환값은 Bool 으로 true or false 를 반환한다.**
+
+비교연산자의 결과 값은 .description을 입력해주어야 화면에 표시 된다.
+
+VStack 에 들어갈 수 있는 값은 10개 이다.
 ``` // 비교 연산자
 Text("\(age < anyNumber)".description)
 Text("\(anyNumber < anyNumber2)".description)
