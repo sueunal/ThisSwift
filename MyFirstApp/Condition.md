@@ -8,9 +8,9 @@ if condition {
 } else {
 		code
 }
+```
 **If 의 조건이 참이면 코드를 실행하고 거짓미면 else의 코드를 실행한다.**
 **if만 따로 사용할 수 있고, else 는 따로 사용할 수 없다.**
-```
 
 ```
   var randomNumber = 4
