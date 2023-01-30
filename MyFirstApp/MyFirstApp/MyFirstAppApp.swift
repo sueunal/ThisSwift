@@ -11,11 +11,7 @@ import SwiftUI
 struct MyFirstAppApp: App {
     var body: some Scene {
         WindowGroup {
-<<<<<<< Updated upstream
             myFunc()
-=======
-            Myfunction()
->>>>>>> Stashed changes
         }
     }
 }
