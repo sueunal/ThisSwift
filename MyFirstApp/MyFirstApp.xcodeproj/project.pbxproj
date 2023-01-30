@@ -16,6 +16,18 @@
 		2C56F6A0298362C7004EF2BF /* MyFirstAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56F69F298362C7004EF2BF /* MyFirstAppUITestsLaunchTests.swift */; };
 		2C56F6AF2983672D004EF2BF /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C56F6AE2983672D004EF2BF /* FirstView.swift */; };
 		2CA02AC029851BC400D0F9F9 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA02ABF29851BC400D0F9F9 /* Variable.swift */; };
+		2CA02AC22986A88700D0F9F9 /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA02AC12986A88700D0F9F9 /* Condition.swift */; };
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+		2CA02ACA29878A5700D0F9F9 /* myFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA02AC929878A5700D0F9F9 /* myFunc.swift */; };
+=======
+		2CA02AC42986AD1400D0F9F9 /* Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA02AC32986AD1400D0F9F9 /* Loop.swift */; };
+		2CA02AC62986BF2B00D0F9F9 /* Myfunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA02AC52986BF2B00D0F9F9 /* Myfunction.swift */; };
+>>>>>>> Stashed changes
+=======
+		2CA02AC42986AD1400D0F9F9 /* Loop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA02AC32986AD1400D0F9F9 /* Loop.swift */; };
+		2CA02AC62986BF2B00D0F9F9 /* Myfunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA02AC52986BF2B00D0F9F9 /* Myfunction.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +60,18 @@
 		2C56F69F298362C7004EF2BF /* MyFirstAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2C56F6AE2983672D004EF2BF /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		2CA02ABF29851BC400D0F9F9 /* Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		2CA02AC12986A88700D0F9F9 /* Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+		2CA02AC929878A5700D0F9F9 /* myFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myFunc.swift; sourceTree = "<group>"; };
+=======
+		2CA02AC32986AD1400D0F9F9 /* Loop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loop.swift; sourceTree = "<group>"; };
+		2CA02AC52986BF2B00D0F9F9 /* Myfunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myfunction.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
+=======
+		2CA02AC32986AD1400D0F9F9 /* Loop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loop.swift; sourceTree = "<group>"; };
+		2CA02AC52986BF2B00D0F9F9 /* Myfunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Myfunction.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +122,24 @@
 		2C56F681298362C6004EF2BF /* MyFirstApp */ = {
 			isa = PBXGroup;
 			children = (
+				2CA02AC12986A88700D0F9F9 /* Condition.swift */,
 				2C56F682298362C6004EF2BF /* MyFirstAppApp.swift */,
 				2C56F684298362C6004EF2BF /* ContentView.swift */,
 				2CA02ABF29851BC400D0F9F9 /* Variable.swift */,
 				2C56F6AE2983672D004EF2BF /* FirstView.swift */,
 				2C56F686298362C7004EF2BF /* Assets.xcassets */,
 				2C56F688298362C7004EF2BF /* Preview Content */,
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+				2CA02AC929878A5700D0F9F9 /* myFunc.swift */,
+=======
+				2CA02AC32986AD1400D0F9F9 /* Loop.swift */,
+				2CA02AC52986BF2B00D0F9F9 /* Myfunction.swift */,
+>>>>>>> Stashed changes
+=======
+				2CA02AC32986AD1400D0F9F9 /* Loop.swift */,
+				2CA02AC52986BF2B00D0F9F9 /* Myfunction.swift */,
+>>>>>>> Stashed changes
 			);
 			path = MyFirstApp;
 			sourceTree = "<group>";
@@ -266,7 +302,11 @@
 				2C56F685298362C6004EF2BF /* ContentView.swift in Sources */,
 				2C56F6AF2983672D004EF2BF /* FirstView.swift in Sources */,
 				2C56F683298362C6004EF2BF /* MyFirstAppApp.swift in Sources */,
+				2CA02AC42986AD1400D0F9F9 /* Loop.swift in Sources */,
+				2CA02AC62986BF2B00D0F9F9 /* Myfunction.swift in Sources */,
 				2CA02AC029851BC400D0F9F9 /* Variable.swift in Sources */,
+				2CA02AC22986A88700D0F9F9 /* Condition.swift in Sources */,
+				2CA02ACA29878A5700D0F9F9 /* myFunc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
