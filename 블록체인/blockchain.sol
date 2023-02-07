@@ -1,8 +1,9 @@
-pragma solidity ^0.4.18;
+pragma solidity ^0.4.23;
 
 
 contract accesscontrol{
     address [] admins;
+    address defaultAdmin;
     struct Token{
         bytes32 UID;
         address user;
@@ -13,7 +14,8 @@ contract accesscontrol{
         address dev;
         address fog;
     }
-    
+
+
     Token [] public Tokens;
     mapping(address=>Devices[]) public users_devices;
     mapping(address=>address[]) public fog_devices;
@@ -26,15 +28,20 @@ contract accesscontrol{
             }
         }
         if(!admin){
-            throw;
+            revert();
         }
         else{
             _;
         }
+        
     }
     function addAdmin(address newAdmin) public onlyAdmin{
         admins.push(newAdmin);
         AdminAdded(newAdmin,msg.sender);
+    }
+    constructor(address defaultadmin) public{
+        admins.push(defaultadmin);
+        AdminAdded(defaultadmin,msg.sender);
     }
     function addUserDeviceMapping(address user,address device,address fog) public onlyAdmin{
         bool deviceExists=false;
@@ -66,7 +73,7 @@ contract accesscontrol{
 
     function delAdmin(address admin) public onlyAdmin{
         if(admins.length<2){
-            throw;
+            revert();
         }
         else{
             uint256 i = 0;
